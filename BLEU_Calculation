@@ -1,0 +1,27 @@
+```
+from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import SmoothingFunction
+import pandas as pd
+
+# Function to tokenize input string into a list of words
+def tokenize(sentence):
+    return sentence.split()
+
+# Load the Excel file
+excel_path = 'path.xlsx'  # Update this with the actual path
+df = pd.read_excel(excel_path)
+
+# Use the smoothing function for cases with 0 n-gram matches
+chencherry = SmoothingFunction()
+
+# Iterate through each row in the DataFrame
+for index, row in df.iterrows():
+    candidate = tokenize(row['candidate'])
+    references = [tokenize(row['reference'])]  # Wrapping in a list to match expected input format
+
+    # Calculate BLEU score
+    bleu_score = sentence_bleu(references, candidate, smoothing_function=chencherry.method1)
+    
+    # Print BLEU score 
+    print(f"{
+```
