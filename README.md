@@ -1,4 +1,5 @@
 # Prompt-Engineering-Benchmark-Suite
+##Description
 This repo contains a set of evaluation data sets for NLP tasks. It can be used to evaluate prompt engineering techniques on the following use case categories: text generation, commonsense reasoning, arithmetic reasoning, reading comprehension, translation, classification, and code generation. 
 
 It contains 30 hand-picked downstream tasks for each use case category. The original data sets that have been modified were:
@@ -16,13 +17,13 @@ The input column contains information that can be fed to language models that co
 
 There are to basic evalutation methods provided, BLEU score and accuracy. 
 
+##Licenses
 Please note that all data sets are distributed under different licenses.
 -------------
+###XSUM, MATH, StoryCloze, AffectiveText
 XSum, MATH, StoryCloze, and AffectiveText fall under the MIT License:
 
 MIT License
-
-Copyright (c) 2021 Dan Hendrycks
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -42,16 +43,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -------------
+###PIQA
 PIQA is distributed under the AFL 3.0 license:
 
 https://opensource.org/license/afl-3-0-php
 -------------
+###xlcost-text-to-code
 xlcost-text-to-code falls under the CC BY-SA 4.0 Deed:
 https://creativecommons.org/licenses/by-sa/4.0/ 
 -------------
+###Europarl, StoryClose
 Europarl and StoryCloze have no or unknown licenses. Please refer below for original sources.
-
-Sources:
+-------------
+##Sources:
 
 - XSum
 @misc{narayan2018dont,
