@@ -1,0 +1,23 @@
+```
+import pandas as pd
+
+# Load the Excel file
+excel_path = 'path.xlsx'  # Update this with the actual path
+df = pd.read_excel(excel_path)
+
+# Initialize a counter for correct predictions
+correct_predictions = 0
+
+# Iterate through each row in the DataFrame
+for index, row in df.iterrows():
+    if row['candidate'] == row['reference']:
+        print(1)
+        correct_predictions += 1
+    else:
+        print(0)
+
+# Calculate accuracy
+accuracy = correct_predictions / len(df)
+print(f"Accuracy: {accuracy}")
+
+```
