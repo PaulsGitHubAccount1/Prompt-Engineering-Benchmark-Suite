@@ -1,5 +1,5 @@
 # Prompt-Engineering-Benchmark-Suite
-##Description
+## Description
 This repo contains a set of evaluation data sets for NLP tasks. It can be used to evaluate prompt engineering techniques on the following use case categories: text generation, commonsense reasoning, arithmetic reasoning, reading comprehension, translation, classification, and code generation. 
 
 It contains 30 hand-picked downstream tasks for each use case category. The original data sets that have been modified were:
@@ -17,47 +17,24 @@ The input column contains information that can be fed to language models that co
 
 There are to basic evalutation methods provided, BLEU score and accuracy. 
 
-##Licenses
-Please note that all data sets are distributed under different licenses.
--------------
-###XSUM, MATH, StoryCloze, AffectiveText
-XSum, MATH, StoryCloze, and AffectiveText fall under the MIT License:
+## Licenses
+Please note that the contained data sets fall under different licenses:
+### XSUM, MATH, StoryCloze, AffectiveText
+XSum, MATH, StoryCloze, and AffectiveText fall under the [MIT License](https://opensource.org/license/mit)
 
-MIT License
+### PIQA
+PIQA is distributed under the [AFL 3.0 license](https://opensource.org/license/afl-3-0-php)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### xlcost-text-to-code
+xlcost-text-to-code falls under the [CC BY-SA 4.0 Deed](https://creativecommons.org/licenses/by-sa/4.0/ )
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--------------
-###PIQA
-PIQA is distributed under the AFL 3.0 license:
-
-https://opensource.org/license/afl-3-0-php
--------------
-###xlcost-text-to-code
-xlcost-text-to-code falls under the CC BY-SA 4.0 Deed:
-https://creativecommons.org/licenses/by-sa/4.0/ 
--------------
-###Europarl, StoryClose
+### Europarl, StoryClose
 Europarl and StoryCloze have no or unknown licenses. Please refer below for original sources.
--------------
-##Sources:
 
-- XSum
+## Sources
+
+- XSum:
+```
 @misc{narayan2018dont,
       title={Don't Give Me the Details, Just the Summary! Topic-Aware Convolutional Neural Networks for Extreme Summarization}, 
       author={Shashi Narayan and Shay B. Cohen and Mirella Lapata},
@@ -66,7 +43,9 @@ Europarl and StoryCloze have no or unknown licenses. Please refer below for orig
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
-- PIQA
+```
+- PIQA:
+```
 @misc{bisk2019piqa,
       title={PIQA: Reasoning about Physical Commonsense in Natural Language}, 
       author={Yonatan Bisk and Rowan Zellers and Ronan Le Bras and Jianfeng Gao and Yejin Choi},
@@ -75,7 +54,9 @@ Europarl and StoryCloze have no or unknown licenses. Please refer below for orig
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
-- MATH
+```
+- MATH:
+```
 @misc{hendrycks2021measuring,
       title={Measuring Mathematical Problem Solving With the MATH Dataset}, 
       author={Dan Hendrycks and Collin Burns and Saurav Kadavath and Akul Arora and Steven Basart and Eric Tang and Dawn Song and Jacob Steinhardt},
@@ -84,7 +65,9 @@ Europarl and StoryCloze have no or unknown licenses. Please refer below for orig
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
-- StoryCloze
+```
+- StoryCloze:
+```
 @misc{mostafazadeh2016corpus,
       title={A Corpus and Evaluation Framework for Deeper Understanding of Commonsense Stories}, 
       author={Nasrin Mostafazadeh and Nathanael Chambers and Xiaodong He and Devi Parikh and Dhruv Batra and Lucy Vanderwende and Pushmeet Kohli and James Allen},
@@ -93,7 +76,9 @@ Europarl and StoryCloze have no or unknown licenses. Please refer below for orig
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
-- Europarl de-en
+```
+- Europarl de-en:
+```
 @inproceedings{inproceedings,
 author = {Koehn, Philipp and Och, Franz and Marcu, Daniel},
 year = {2003},
@@ -102,7 +87,9 @@ pages = {},
 title = {Statistical Phrase-Based Translation.},
 doi = {10.3115/1073445.1073462}
 }
-- AffectiveText
+```
+- AffectiveText:
+```
 @inproceedings{strapparava-mihalcea-2007-semeval,
     title = "{S}em{E}val-2007 Task 14: Affective Text",
     author = "Strapparava, Carlo  and
@@ -117,8 +104,10 @@ doi = {10.3115/1073445.1073462}
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/S07-1013",
     pages = "70--74",
-}  
-- xlcost-text-to-code
+}
+```
+- xlcost-text-to-code:
+```
 @misc{zhu2022xlcost,
      title = {XLCoST: A Benchmark Dataset for Cross-lingual Code Intelligence},
      url = {https://arxiv.org/abs/2206.08474},
@@ -127,3 +116,4 @@ doi = {10.3115/1073445.1073462}
      eprint={2206.08474},
      archivePrefix={arXiv}
 }
+```
